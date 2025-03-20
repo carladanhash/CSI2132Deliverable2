@@ -1,2 +1,4 @@
 com/ehotels/eHotelsApp.class
+com/ehotels/model/HotelCategory.class
+com/ehotels/controller/HelloController.class
 com/ehotels/App.class

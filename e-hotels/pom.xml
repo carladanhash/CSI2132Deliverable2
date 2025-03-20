@@ -37,8 +37,9 @@
 
         <!-- ✅ MySQL Driver (Fixed Group ID & Artifact Name) -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
+             <groupId>com.mysql</groupId>
+             <artifactId>mysql-connector-j</artifactId>
+             <version>8.0.33</version> <!-- Make sure to specify a version -->
             <scope>runtime</scope>
         </dependency>
 
