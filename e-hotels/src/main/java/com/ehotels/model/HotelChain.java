@@ -10,7 +10,7 @@ public class HotelChain {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Chain_ID")
-    private Long id;
+    private Integer id;
 
     @Column(name = "Chain_Name", nullable = false, unique = true)
     private String name;

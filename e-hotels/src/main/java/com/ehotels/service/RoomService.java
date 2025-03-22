@@ -17,7 +17,23 @@ public class RoomService {
         this.roomRepository = roomRepository;
     }
 
+ 
+
     public List<Room> searchRooms(String hotelChain, String area, RoomCapacity capacity, Double price, ViewType viewType) {
-        return roomRepository.searchRooms(hotelChain, area, capacity, price, viewType);
+        // Log the parameters to see what values are being passed to the query
+        System.out.println("🔍 Searching with filters:");
+        System.out.println("Hotel Chain: " + hotelChain);
+        System.out.println("Area: " + area);
+        System.out.println("Capacity: " + capacity);
+        System.out.println("Price: " + price);
+        System.out.println("View Type: " + viewType);
+
+        // Perform the query with the given parameters
+        List<Room> rooms = roomRepository.searchRooms(hotelChain, area, capacity, price, viewType);
+
+        // Log how many results were found
+        System.out.println("🔍 Rooms found: " + rooms.size());
+
+        return rooms;
     }
 }

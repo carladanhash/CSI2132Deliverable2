@@ -11,19 +11,13 @@ public class Room {
     @Column(name = "Room_ID")
     private Long id;
 
-    @Column(name = "Room_Number", unique = true, nullable = false)
-    private Integer roomNumber;
-
     @ManyToOne
     @JoinColumn(name = "Hotel_ID", nullable = false)
     private Hotel hotel;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "Room_Capacity", nullable = false)
-    private RoomCapacity roomCapacity;
-
-    @Column(name = "Extendable", nullable = false)
-    private Boolean extendable;
+    @Column(name = "Room_Capacity", nullable = false) // ✅ MUST MATCH DB COLUMN
+    private RoomCapacity capacity;
 
     @Column(name = "Price", nullable = false)
     private Double price;
@@ -34,7 +28,7 @@ public class Room {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "Damage_Status", nullable = false)
-    private DamageStatus damageStatus = DamageStatus.NONE;
+    private DamageStatus damageStatus;
 
-    // Constructors, Getters, Setters
+    // Getters and setters (or use Lombok if you're using it)
 }
