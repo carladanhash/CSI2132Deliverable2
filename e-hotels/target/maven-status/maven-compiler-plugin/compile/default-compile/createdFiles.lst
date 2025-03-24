@@ -1,4 +1,13 @@
-com/ehotels/eHotelsApp.class
-com/ehotels/model/HotelCategory.class
-com/ehotels/controller/HelloController.class
-com/ehotels/App.class
+com\ehotels\eHotelsApp.class
+com\ehotels\model\RoomCapacity.class
+com\ehotels\model\ViewType.class
+com\ehotels\App.class
+com\ehotels\controller\HelloController.class
+com\ehotels\model\HotelCategory.class
+com\ehotels\service\RoomService.class
+com\ehotels\repository\RoomRepository.class
+com\ehotels\model\Hotel.class
+com\ehotels\model\DamageStatus.class
+com\ehotels\model\Room.class
+com\ehotels\controller\RoomController.class
+com\ehotels\model\HotelChain.class
