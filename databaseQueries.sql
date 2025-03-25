@@ -21,7 +21,7 @@ WHERE H.Category = '5-Star';
 
 -- ---------------------------------------------------------------------------------
 
--- QUERY 3: Find out how many customers booked a hotel with the address 234 W 42nd St, New York, NY 10036, United States.
+-- QUERY 3: Find out how many customers booked a hotel with the address 234 Ocean Blvd, Luxury City, LC.
 
 SELECT COUNT(DISTINCT B.Customer_ID) AS Total_Customers
 FROM Booking AS B
